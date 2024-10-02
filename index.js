@@ -36,4 +36,5 @@ index.get("/get",async(request,response)=>{
     `;
     const data=await db.all(que);
     console.log(data);
+    response.send(data);
 })
